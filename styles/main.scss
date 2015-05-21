@@ -1,0 +1,18 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+nav {
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  border-bottom: 2px solid #DBDBD7;
+};
+
+.logo {
+  display: inline-block;
+  width: 80px;
+}
+
+.main {
+  background-color: #F5F5F1;
+};
