@@ -6,15 +6,105 @@ html {
 *::before {
   box-sizing: inherit; }
 
+body {
+  color: #222;
+  font-family: Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.4; }
+
 nav {
   width: 100%;
+  margin: 0 auto;
+  padding: 0 11.8%;
+  display: block;
+  position: absolute;
   background-color: white;
   height: 80px;
-  border-bottom: 1px solid #DBDBD7; }
+  border-bottom: 1px solid #DBDBD7;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05); }
+
+.leftnav {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 10px; }
+
+.rightnav {
+  display: inline-block;
+  float: right;
+  position: relative;
+  top: 13px; }
 
 .logo {
+  position: relative;
+  top: 10px;
   display: inline-block;
-  width: 80px; }
+  width: 90px;
+  height: 50px; }
+
+.search {
+  display: inline-block; }
+
+.searchtext, .searchbtn {
+  display: block;
+  float: left; }
+
+.searchtext {
+  height: 34px;
+  width: 250px; }
+
+.searchbtn {
+  background-color: #39AAC5;
+  border: none;
+  border-radius: 3px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  color: white; }
+
+.btn {
+  padding: 7px 5px 8px 5px; }
+
+.rnBtn {
+  float: right;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  top: 13px; }
+
+.browse {
+  position: relative;
+  bottom: 13px;
+  margin-left: 20px;
+  background-color: white;
+  border: 1px solid #E5E5E5;
+  border-radius: 3px;
+  color: #666666; }
+
+.regBtn {
+  background-color: white;
+  border: none;
+  color: #1692B3; }
+
+.siBtn {
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid #0192B5;
+  border-radius: 3px;
+  color: #1692B3; }
+
+.cart {
+  height: 40px;
+  display: block;
+  padding: 0 10px;
+  background-color: white;
+  border: none;
+  border-left: #EEEEEE 1px solid; }
+
+.cartItem {
+  display: block; }
+
+.cartPng {
+  width: 20px; }
 
 .mainWrapper {
   max-width: 68em;
