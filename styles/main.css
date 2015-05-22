@@ -14,9 +14,9 @@ body {
 
 nav {
   width: 100%;
+  display: block;
   margin: 0 auto;
   padding: 0 11.8%;
-  display: block;
   position: absolute;
   background-color: white;
   height: 80px;
@@ -107,12 +107,72 @@ nav {
   width: 20px; }
 
 .mainWrapper {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
+  position: relative;
+  top: 80px;
+  display: block;
   background-color: #F5F5F1; }
 
-.mainWrapper::after {
+.mainContent {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mainContent::after {
   clear: both;
   content: "";
   display: table; }
+
+.leftSide {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+
+.leftSide:last-child {
+  margin-right: 0; }
+
+.categories {
+  background-color: white;
+  border-radius: 3px; }
+
+.allCat {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  font-weight: bold; }
+
+.allCat:hover {
+  border-bottom: 1px solid #555; }
+
+.sideLinks {
+  margin-left: 20px;
+  line-height: 1.4;
+  text-decoration: none;
+  font-size: 13px;
+  color: #1692B3; }
+
+.sideLinks:hover {
+  border-bottom: 1px solid #1692B3; }
+
+.refine {
+  background-color: white;
+  border-radius: 3px; }
+
+.iType {
+  margin-left: 10px; }
+
+.divider {
+  width: 90%;
+  margin: 25px 5%;
+  border-bottom: 1px solid #E1E3DF; }
+
+.rightSide {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 74.41059%;
+  margin-right: 0; }
+
+.rightSide:last-child {
+  margin-right: 0; }
