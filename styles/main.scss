@@ -27,22 +27,21 @@ nav {
   display: inline-block;
   float: left;
   position: relative;
-  top: 10px;
+  top: 25px;
 }
 
 .rightnav {
   display: inline-block;
   float: right;
   position: relative;
-  top: 13px;
+  top: 10px;
 }
 
 .logo {
   position: relative;
-  top: 10px;
   display: inline-block;
-  width: 90px;
-  height: 50px;
+  width: 75px;
+  margin-right: 15px;
 }
 
 .search {
@@ -52,19 +51,31 @@ nav {
 .searchtext,.searchbtn{
   display: block;
   float: left;
+  position: relative;
+  bottom: 5px;
 }
 
 .searchtext {
   height: 34px;
   width: 250px;
+  border: 1px solid #CFCBC8;
+  border-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 14px;
 }
 
 .searchbtn {
+  height: 34px;
+  padding: 7px 15px 8px;
   background-color: #39AAC5;
+  background-size: 104%;
   border: none;
   border-radius: 3px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
 }
 
@@ -82,7 +93,7 @@ nav {
 
 .browse {
   position: relative;
-  bottom: 13px;
+  bottom: 18px;
   margin-left: 20px;
   background-color: white;
   border: 1px solid #E5E5E5;
@@ -149,10 +160,10 @@ nav {
 .categories {
   background-color: white;
   border-radius: 3px;
+  margin-bottom: 30px;
 }
 
 .allCat {
-  margin-left: 5px;
   text-decoration: none;
   color: #555;
   font-size: 13px;
@@ -164,7 +175,7 @@ nav {
 }
 .sideLinks {
   margin-left: 20px;
-  line-height: 1.4;
+  line-height: 2.0;
   text-decoration: none;
   font-size: 13px;
   color: $tealtext;
@@ -179,6 +190,11 @@ nav {
   border-radius: 3px;
 }
 
+.radio {
+  height: 16px;
+  width: 16px;
+}
+
 .iType {
   margin-left: 10px;
 }
@@ -189,21 +205,83 @@ nav {
   border-bottom: 1px solid #E1E3DF;
 }
 
-
-
 .rightSide {
   @include span-columns(9);
   @include omega;
 }
 
+#searchArrow {
+  color: #555;
+  font-size: 11px;
+}
+
+// .AC:after {
+//   content: '▻';
+//   color: #555;
+//   font-size: 7px;
+// }
+
+#searchTerm {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#totalResults {
+  font-size: 13px;
+}
+
+.SB {
+  float: right;
+  position: relative;
+  right: 20px;
+}
+
+.sort {
+  font-size: 13px;
+}
+
+.rel {
+  color: $tealtext;
+  font-size: 13px;
+}
+
 .listing {
   @include span-columns(3);
   @include omega(3n);
+  text-align: center;
   height: 220px;
   width: 220px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: white;
+  overflow: hidden;
 }
 
+.listingPic {
+  width: 200px;
+  height: 170px;
+}
+
+.listingText {
+  font-size: 12px;
+}
+
+.listingTitle {
+  width: 200px;
+  margin-left: 10px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listingShop {
+  float: left;
+  color: #B2B2B2;
+}
+
+.listingPrice {
+  float: right;
+  color: #78C042;
+}
 
