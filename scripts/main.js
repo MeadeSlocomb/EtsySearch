@@ -9,7 +9,7 @@ $(document).ready( function () {
       return {
         "picture": item.Images[0].url_170x135,
         "title": item.title,
-        "price": item.currency_code + item.price,
+        "price": '$' + item.price + " " + item.currency_code,
         "maker": item.Shop.shop_name
       };
   });
@@ -21,6 +21,6 @@ $(document).ready( function () {
     title = '<span class="listingTitle">' + item.title + '</span>';
     maker = '<span class="listingShop">' + item.maker + '</span>';
     price = '<span class="listingPrice">' + item.price + '</span>';
-    $('#searchResults').append('<div class="listing">' + picture + '<div class="listingText">' + title + maker + price + '</div></div>');
+    $('#searchResults').append('<div class="listing">' + picture + '<div class="listingText">' + '<img class="hoverIcon hover" src="images/heart.png"></img><img class="hoverIconR hover" src="images/hamburger.png"></img>' + title + maker + price + '</div></div>');
   });
 });
